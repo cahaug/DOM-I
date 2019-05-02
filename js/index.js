@@ -103,8 +103,6 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 const codeSnippets = document.querySelector('#middle-img');
 codeSnippets.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-//top-content text
-
 // Text Fill & Contact:
 const testing1 = document.getElementsByTagName('h4');
 const testing2 = Array.from(testing1);
@@ -131,9 +129,14 @@ testingP2[8].textContent = siteContent["footer"]["copyright"];
 
 navTextArr.forEach(item => {item.style.color = 'green'});
 
-//appendChild and prepend
-// const navSystem = document.querySelector('nav');
-// navSystem.appendChild('Homework');
-const navSubSystem = document.querySelector('a');
-navSubSystem.prepend('First ');
+//appendChild 
+const navSystem = document.querySelector('nav');
+const homework = document.createElement('a');
+homework.textContent = 'Homework';
+navSystem.appendChild(homework);
 
+
+//new button - prepend
+const contactButton = document.createElement('button');
+contactButton.textContent = 'Email Us!';
+testingP2[7].prepend(contactButton);
