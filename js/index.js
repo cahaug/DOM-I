@@ -105,12 +105,26 @@ codeSnippets.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 //top-content text
 
-// const topconTextCon = document.querySelectorAll('.top-content');
-// console.log(topconTextCon);
-
-
-
-
+// Text Fill & Contact:
+const testing1 = document.getElementsByTagName('h4');
+const testing2 = Array.from(testing1);
+testing2[0].textContent = siteContent["main-content"]["features-h4"];
+testing2[1].textContent = siteContent["main-content"]["about-h4"];
+testing2[2].textContent = siteContent["main-content"]["services-h4"];
+testing2[3].textContent = siteContent["main-content"]["product-h4"];
+testing2[4].textContent = siteContent["main-content"]["vision-h4"];
+testing2[5].textContent = siteContent["contact"]["contact-h4"];
+const testingP = document.getElementsByTagName('p');
+const testingP2 = Array.from(testingP);
+testingP2[0].textContent = siteContent["main-content"]["features-content"];
+testingP2[1].textContent = siteContent["main-content"]["about-content"];
+testingP2[2].textContent = siteContent["main-content"]["services-content"];
+testingP2[3].textContent = siteContent["main-content"]["product-content"];
+testingP2[4].textContent = siteContent["main-content"]["vision-content"];
+testingP2[5].textContent = siteContent["contact"]["address"];
+testingP2[6].textContent = siteContent["contact"]["phone"];
+testingP2[7].textContent = siteContent["contact"]["email"];
+testingP2[8].textContent = siteContent["footer"]["copyright"];
 
 
 //green nav-text
@@ -120,6 +134,6 @@ navTextArr.forEach(item => {item.style.color = 'green'});
 //appendChild and prepend
 // const navSystem = document.querySelector('nav');
 // navSystem.appendChild('Homework');
-// const navSubSystem = document.querySelector('a');
-// navSubSystem.prepend('First ');
+const navSubSystem = document.querySelector('a');
+navSubSystem.prepend('First ');
 
