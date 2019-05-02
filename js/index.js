@@ -40,3 +40,86 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+//Adding text for links to nav
+
+const navText = document.getElementsByTagName('a');
+const navTextArr = Array.from(navText);
+navTextArr[0].textContent = siteContent["nav"]["nav-item-1"];
+navTextArr[1].textContent = siteContent["nav"]["nav-item-2"];
+navTextArr[2].textContent = siteContent["nav"]["nav-item-3"];
+navTextArr[3].textContent = siteContent["nav"]["nav-item-4"];
+navTextArr[4].textContent = siteContent["nav"]["nav-item-5"];
+navTextArr[5].textContent = siteContent["nav"]["nav-item-6"];
+
+
+
+//Adding h1 text to page
+
+const ctaTxt = document.getElementsByTagName("h1")[0];
+ctaTxt.textContent = siteContent["cta"]["h1"];
+
+// const linebreak = document.createElement("br");
+// const h1textContent = ["DOM", "Is", "Awesome"];
+// const haychOne = document.querySelector('h1');
+// haychOne.append(linebreak);
+// haychOne.append(h1textContent[0]);
+// haychOne.append(linebreak);
+// haychOne.append(h1textContent[1]);
+// haychOne.append(linebreak);
+// haychOne.append(h1textContent[2]);
+// console.log(haychOne);
+
+// const ctaText = document.querySelector('.cta-text');
+// let h1a = document.querySelector('h1');
+// let h1b = document.createElement('h1');
+// let h1c = document.createElement('h1');
+
+// let firstBreak = document.createElement(“br”);
+
+// h1a.textContent = str1[0];
+// h1b.textContent = str1[1];
+// h1c.textContent = str1[2];
+
+// ctaText.prepend(firstBreak);
+// ctaText.prepend(h1a);
+// ctaText.prepend(h1b);
+// ctaText.prepend(h1c);
+
+
+//text to button
+
+const buttonMod = document.querySelector('button');
+buttonMod.textContent = siteContent["cta"]["button"];
+
+//image into cta
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//image code snippets
+
+const codeSnippets = document.querySelector('#middle-img');
+codeSnippets.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//top-content text
+
+// const topconTextCon = document.querySelectorAll('.top-content');
+// console.log(topconTextCon);
+
+
+
+
+
+
+//green nav-text
+
+navTextArr.forEach(item => {item.style.color = 'green'});
+
+//appendChild and prepend
+// const navSystem = document.querySelector('nav');
+// navSystem.appendChild('Homework');
+// const navSubSystem = document.querySelector('a');
+// navSubSystem.prepend('First ');
+
